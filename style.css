@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.budget{
+    background-color: rgb(241, 243, 255);
+    display: flex;
+    flex-direction: column;
+    margin: 40px 120px;
+    padding: 60px 120px;
+    gap: 20px;
+    border-radius: 16px;
+    position: relative;
+}
+
+.budget h1{
+    font-size: 38px;
+}
+
+.budget #Bud_inpt{
+    width: 450px;
+    font-size: 18px;
+    padding: 12px 16px;
+    border: 2px solid rgb(255, 123, 0);
+    border-radius: 8px;
+    outline: none;
+    background-color: rgb(241, 243, 255);
+}
+
+.budget #bud_btn{
+    width: 140px;
+    background-color: rgb(255, 123, 0);
+    border: 2px solid rgb(255, 123, 0);
+    color: white;
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 14px 16px;
+    border: none;
+}
+
+
+.budget_content{
+    display: flex;
+    background-color: rgb(241, 243, 255);
+    justify-content: space-between;
+    margin: 40px 120px;
+    padding: 60px 120px;;
+    border-radius: 16px;
+}
+
+.bud_card{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    gap: 20px;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px -2px rgba(1, 1, 1, 0.3);
+}
+
+.bud_card h2{
+    color: rgb(255, 123, 0);
+}
+
+.bud_card p{
+    font-size: 24px;
+}
+
+
+.expense_section{
+    background-color: rgb(241, 243, 255);
+    margin: 40px 120px;
+    padding: 60px 120px;;
+    border-radius: 16px;
+}
+
+.exp_heading h2{
+    font-size: 32px;
+    color: rgb(255, 123, 0);
+    margin-bottom: 20px;
+}
+
+.exp_card{
+    margin: 20px 0;
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px -2px rgba(1, 1, 1, 0.3);
+}
+
+.exp_cat_date{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+    flex: 2;
+}
+
+.exp_cat_date h4{
+    font-size: 22px;
+    color: rgb(255, 123, 0);
+}
+
+.exp_cat_date p{
+    font-size: 12px;
+    color: rgb(116, 116, 116);
+}
+
+.exp_desc_btn{
+    flex: 12;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.exp_desc_btn .card_price{
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(255, 123, 0);
+}
+
+.exp_btn input{
+    font-size: 18px;
+    padding: 14px 16px;
+    border: 2px solid rgb(255, 123, 0);
+    border-radius: 8px;
+    color: rgb(255, 123, 0);
+    background-color: white;
+}
+
+#add_exp_btn{
+    /* width: 140px; */
+    background-color: rgb(255, 123, 0);
+    border: 2px solid rgb(255, 123, 0);
+    color: white;
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 14px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.form{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form form{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: white;
+    width: 450px;
+    box-shadow: 0px 0px 8px -2px rgba(1, 1, 1, 0.3);
+    padding: 40px;
+    border-radius: 12px;
+    gap: 7px;
+}
+
+form h2{
+    font-size: 28px;
+    text-align: center;
+    color: rgb(255, 123, 0);
+    margin: 20px 0;
+}
+
+form label{
+    font-size: 18px;
+}
+
+form input,select{
+    font-size: 16px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+form #form_add{
+    background-color: rgb(255, 123, 0);
+    color: white;
+    border: 2px solid rgb(255, 123, 0);
+    font-size: 18px;
+    transition: ease-in-out 0.3s;
+}
+
+form #form_cancel{
+    background-color: white;
+    color: rgb(255, 123, 0);
+    border: 2px solid rgb(255, 123, 0);
+    font-size: 18px;
+    transition: ease-in-out 0.3s;
+}
+
+form #form_cancel:hover , form #form_add:hover{
+    box-shadow: 0px 0px 12px 2px rgba(1, 1, 1, 0.3);
+    cursor: pointer;
+}
+
+.form_active{
+    display: none;
+}
